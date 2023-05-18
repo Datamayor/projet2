@@ -38,6 +38,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    animation: feature1 5s linear infinite;
 }
 
 .feature2{
@@ -49,6 +50,7 @@
     position: absolute;
     top: 90px;
     left: 80px ;
+    animation: feature2 5s linear infinite;
 }
 .feature3{
     width: 200px;
@@ -59,6 +61,7 @@
     position: absolute;
     top: 60px;
     right: 80px ;
+    animation: feature3 5s linear infinite;
 }
 
 .feature4{
@@ -70,6 +73,7 @@
     position: absolute;
     top: 340px;
     left: 80px ;
+    animation: feature4 5s linear infinite;
 }
 
 .feature5{
@@ -81,6 +85,7 @@
     position: absolute;
     bottom: 80px;
     left: 225px ;
+    animation: feature5 5s linear infinite;
 }
 
 .feature6{
@@ -92,6 +97,7 @@
     position: absolute;
     bottom: 160px;
     right: 100px ;
+    animation: feature6 5s linear infinite;
 }
 
 .wrapper h5{
@@ -140,7 +146,7 @@
 }
 
 .content h1{
-    font-size: 38px;
+    font-size: 36px;
 }
 
 .content hr{
@@ -161,4 +167,64 @@ button{
     color: #009688;
     border-radius: 3px;
     margin-top: 20px;
+    cursor: pointer;
+}
+
+
+@keyframes feature1 {
+    0%{
+       width: 0px;
+       height: 0px;
+    }
+    7%{
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@keyframes feature2 {
+    0%{
+      transform: translateY(-100%);
+    }
+    30%{
+        transform: translateY(0%);
+    }
+}
+
+@keyframes feature3 {
+    0%{
+      transform: translate( 80%,-100%);
+    }
+    30%{
+        transform: translate(0%,0%);
+    }
+}
+
+
+@keyframes feature4 {
+    0%{
+      transform: translate( -80%,-100%);
+    }
+    30%{
+        transform: translate(0%,0%);
+    }
+}
+
+
+@keyframes feature5 {
+    0%{
+      transform: translateY(100%);
+    }
+    30%{
+        transform: translateY(0%);
+    }
+}
+
+@keyframes feature6 {
+    0%{
+      transform: translate(80%,-100%);
+    }
+    30%{
+        transform: translate(0%,0%);
+    }
 }
